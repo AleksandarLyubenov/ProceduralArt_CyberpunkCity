@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5343241257119458276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7923751094353554000}
+  - component: {fileID: 132757600709602184}
+  - component: {fileID: 4911116098486400044}
+  - component: {fileID: 8692536517536381023}
+  m_Layer: 0
+  m_Name: NeighborhoodCityGen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7923751094353554000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5343241257119458276}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &132757600709602184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5343241257119458276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703c20498d625b8479ad4f1088d4835e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cityWidth: 400
+  cityDepth: 200
+  subdivisionMinPlotWidth: 6
+  subdivisionMinPlotDepth: 6
+  subdivisionMaxPlotWidth: 30
+  subdivisionMaxPlotDepth: 30
+  subdivisionMaxAspectRatio: 2
+  roadWidth: 3
+  fogPlanePrefab: {fileID: 1995842285256365764, guid: 855f2648b1034a148a3bb1d12f009131, type: 3}
+  buildingPrefab: {fileID: 365935375613525056, guid: ab41525fd114b7c4d8d011abf72e34ce, type: 3}
+  buildingGridSize: 1
+  floorHeight: 2
+  plotDecorations:
+  - prefab: {fileID: 1973601138507662538, guid: 56e9722766e0c454a961b830d2a89b1e, type: 3}
+    localRotationOffset: {x: -90, y: 180, z: 0}
+  - prefab: {fileID: 7025965226534394927, guid: 8cc98b726d0563142b25a2dccc4b5afb, type: 3}
+    localRotationOffset: {x: 0, y: 0, z: 0}
+  - prefab: {fileID: 919132149155446097, guid: 23d9f2297fd99b94eb432c500237e3a1, type: 3}
+    localRotationOffset: {x: 0, y: 90, z: 0}
+  decorationSpawnChance: 0.3
+  buildingDecorationManager: {fileID: 4911116098486400044}
+  cityZones:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  defaultProfile: {fileID: 11400000, guid: 4e65bccab0b7e2a42919070879c5a47e, type: 2}
+  plotMaterial: {fileID: 2100000, guid: 4bf155f5dba26ec498319bdddeed67cd, type: 2}
+  roadMaterial: {fileID: 2100000, guid: 7ec03d209ac71b4418ac32c2243030e5, type: 2}
+  roadLineMaterial: {fileID: 2100000, guid: 9dbd19cdb84baa34aa42b649e3236527, type: 2}
+--- !u!114 &4911116098486400044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5343241257119458276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b97519bb78b7a63478e2ce5da8624c0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  decorations:
+  - {fileID: 11400000, guid: 51ce36d72b0fda240ac7530b426d5874, type: 2}
+--- !u!114 &8692536517536381023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5343241257119458276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dce0d5722615db49964035fa944637b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

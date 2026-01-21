@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f46cf0dc77cca8e4e9a542f14e5133cb, type: 3}
+  m_Name: KanaDecor
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 162092950342732081, guid: d5045d01078780f4a8ef08d56519dc54, type: 3}
+  spawnChance: 5
+  possibleMaterials:
+  - {fileID: 2100000, guid: 45cc0b885e06a8149af126b4d7af8d8f, type: 2}
+  - {fileID: 2100000, guid: c97497292f3451a44b071868a47256a9, type: 2}
+  minAllowedFloor: 5
+  maxAllowedFloor: 100
